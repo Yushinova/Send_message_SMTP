@@ -33,6 +33,7 @@ namespace Send_message_SMTP
             m.Body = "<h2>Письмо-тест работы smtp-клиента</h2>";
             // письмо представляет код html
             m.IsBodyHtml = true;
+           // m.Attachments.Add(new Attachment("path"));//если нужно отправить вложение
             // адрес smtp-сервера и порт, с которого будем отправлять письмо
             SmtpClient smtp = new SmtpClient("smtp.mail.ru", 587);
             // логин и пароль
